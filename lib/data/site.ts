@@ -3,6 +3,10 @@ import type { Social } from "@/lib/types";
 
 export const authorName = "Sergio";
 
+export const profileImage = "/images/profile.webp";
+
+export const profileImageDark = "/images/profile-dark.webp";
+
 export const email = "sergiotejon96@gmail.com";
 
 export const socials: Social[] = [

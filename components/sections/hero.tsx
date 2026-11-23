@@ -1,9 +1,15 @@
 "use client";
 
 import { ArrowDown, FileDown } from "lucide-react";
+import Image from "next/image";
 import { motion, type Variants } from "motion/react";
 
-import { authorName, getResumeUrl } from "@/lib/data/site";
+import {
+  authorName,
+  getResumeUrl,
+  profileImage,
+  profileImageDark,
+} from "@/lib/data/site";
 import type { Locale } from "@/app/[lang]/dictionaries";
 
 type HeroDict = {
@@ -38,58 +44,81 @@ export function Hero({ lang, hero }: { lang: Locale; hero: HeroDict }) {
         variants={container}
         initial="hidden"
         animate="visible"
-        className="mx-auto w-full max-w-5xl"
+        className="mx-auto grid w-full max-w-5xl items-center gap-12 lg:grid-cols-[1fr_auto]"
       >
-        <motion.div
-          variants={item}
-          className="inline-flex items-center gap-2 rounded-full border border-border bg-card/60 px-4 py-1.5 text-xs text-muted backdrop-blur-sm"
-        >
-          <span className="relative flex size-2">
-            <span className="absolute inline-flex size-full animate-ping rounded-full bg-accent opacity-75" />
-            <span className="relative inline-flex size-2 rounded-full bg-accent" />
-          </span>
-          {hero.badge}
-        </motion.div>
-
-        <motion.h1
-          variants={item}
-          className="mt-8 text-5xl font-semibold tracking-tight sm:text-7xl"
-        >
-          {hero.greeting}{" "}
-          <span className="bg-gradient-to-r from-accent via-violet-400 to-cyan-400 bg-clip-text text-transparent">
-            {authorName}
-          </span>
-        </motion.h1>
-
-        <motion.p
-          variants={item}
-          className="mt-4 font-mono text-xl text-accent sm:text-2xl"
-        >
-          {hero.role}
-        </motion.p>
-
-        <motion.p
-          variants={item}
-          className="mt-6 max-w-xl text-lg leading-relaxed text-muted"
-        >
-          {hero.tagline}
-        </motion.p>
-
-        <motion.div variants={item} className="mt-10 flex flex-wrap gap-4">
-          <a
-            href="#projects"
-            className="inline-flex h-11 items-center gap-2 rounded-full bg-foreground px-6 text-sm font-medium text-background transition-opacity hover:opacity-80"
+        <div>
+          <motion.div
+            variants={item}
+            className="inline-flex items-center gap-2 rounded-full border border-border bg-card/60 px-4 py-1.5 text-xs text-muted backdrop-blur-sm"
           >
-            {hero.viewProjects}
-            <ArrowDown className="size-4" />
-          </a>
-          <a
-            href={getResumeUrl(lang)}
-            className="inline-flex h-11 items-center gap-2 rounded-full border border-border px-6 text-sm font-medium transition-colors hover:border-accent hover:text-accent"
+            <span className="relative flex size-2">
+              <span className="absolute inline-flex size-full animate-ping rounded-full bg-accent opacity-75" />
+              <span className="relative inline-flex size-2 rounded-full bg-accent" />
+            </span>
+            {hero.badge}
+          </motion.div>
+
+          <motion.h1
+            variants={item}
+            className="mt-8 text-5xl font-semibold tracking-tight sm:text-7xl"
           >
-            {hero.downloadResume}
-            <FileDown className="size-4" />
-          </a>
+            {hero.greeting}{" "}
+            <span className="bg-gradient-to-r from-accent via-violet-400 to-cyan-400 bg-clip-text text-transparent">
+              {authorName}
+            </span>
+          </motion.h1>
+
+          <motion.p
+            variants={item}
+            className="mt-4 font-mono text-xl text-accent sm:text-2xl"
+          >
+            {hero.role}
+          </motion.p>
+
+          <motion.p
+            variants={item}
+            className="mt-6 max-w-xl text-lg leading-relaxed text-muted"
+          >
+            {hero.tagline}
+          </motion.p>
+
+          <motion.div variants={item} className="mt-10 flex flex-wrap gap-4">
+            <a
+              href="#projects"
+              className="inline-flex h-11 items-center gap-2 rounded-full bg-foreground px-6 text-sm font-medium text-background transition-opacity hover:opacity-80"
+            >
+              {hero.viewProjects}
+              <ArrowDown className="size-4" />
+            </a>
+            <a
+              href={getResumeUrl(lang)}
+              className="inline-flex h-11 items-center gap-2 rounded-full border border-border px-6 text-sm font-medium transition-colors hover:border-accent hover:text-accent"
+            >
+              {hero.downloadResume}
+              <FileDown className="size-4" />
+            </a>
+          </motion.div>
+        </div>
+
+        <motion.div variants={item} className="flex justify-center lg:justify-end">
+          <Image
+            src={profileImage}
+            alt={`${authorName} Tejon`}
+            width={306}
+            height={414}
+            priority
+            sizes="(min-width: 1024px) 320px, 256px"
+            className="h-auto w-64 sm:w-72 lg:w-80 dark:hidden"
+          />
+          <Image
+            src={profileImageDark}
+            alt=""
+            width={306}
+            height={414}
+            priority
+            sizes="(min-width: 1024px) 320px, 256px"
+            className="hidden h-auto w-64 brightness-[0.85] contrast-[0.95] sm:w-72 lg:w-80 dark:block"
+          />
         </motion.div>
       </motion.div>
     </section>
