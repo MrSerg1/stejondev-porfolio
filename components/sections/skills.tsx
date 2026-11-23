@@ -12,7 +12,7 @@ export function Skills({ lang, t }: { lang: Locale; t: SkillsDict }) {
   return (
     <section id="skills" className="px-6 py-20 sm:py-28">
       <div className="mx-auto max-w-5xl">
-        <SectionHeading eyebrow="03" title={t.title} subtitle={t.subtitle} />
+        <SectionHeading title={t.title} subtitle={t.subtitle} />
         <div className="grid gap-6 sm:grid-cols-2">
           {skillCategories.map((category, index) => (
             <FadeIn key={category.title.en} delay={index * 0.1}>

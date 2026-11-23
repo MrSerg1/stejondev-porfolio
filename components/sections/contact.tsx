@@ -16,7 +16,7 @@ export function Contact({ lang, t }: { lang: Locale; t: ContactDict }) {
   return (
     <section id="contact" className="px-6 py-20 sm:py-28">
       <div className="mx-auto max-w-5xl">
-        <SectionHeading eyebrow="05" title={t.title} subtitle={t.subtitle} />
+        <SectionHeading title={t.title} subtitle={t.subtitle} />
         <FadeIn>
           <div className="flex flex-wrap gap-4">
             <a

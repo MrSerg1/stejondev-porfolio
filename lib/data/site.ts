@@ -14,7 +14,7 @@ export const socials: Social[] = [
   {
     id: "linkedin",
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/sergio-tejon-a82139238",
+    href: "https://www.linkedin.com/in/stejondev",
   },
 ];
 

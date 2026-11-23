@@ -13,7 +13,7 @@ export function Experience({ lang, t }: { lang: Locale; t: ExperienceDict }) {
   return (
     <section id="experience" className="px-6 py-20 sm:py-28">
       <div className="mx-auto max-w-5xl">
-        <SectionHeading eyebrow="04" title={t.title} subtitle={t.subtitle} />
+        <SectionHeading title={t.title} subtitle={t.subtitle} />
         <ol className="relative ml-2 space-y-12 border-l border-border pl-8">
           {experience.map((item, index) => (
             <FadeIn key={item.company} delay={index * 0.1}>

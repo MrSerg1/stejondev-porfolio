@@ -16,7 +16,7 @@ export function Projects({ lang, t }: { lang: Locale; t: ProjectsDict }) {
   return (
     <section id="projects" className="px-6 py-20 sm:py-28">
       <div className="mx-auto max-w-5xl">
-        <SectionHeading eyebrow="02" title={t.title} subtitle={t.subtitle} />
+        <SectionHeading title={t.title} subtitle={t.subtitle} />
         <div className="grid gap-6 md:grid-cols-2">
           {projects.map((project, index) => (
             <FadeIn key={project.title} delay={index * 0.1}>
