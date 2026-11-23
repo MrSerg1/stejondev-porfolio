@@ -14,16 +14,16 @@
   "hero": {
     "badge": "Available for new projects",
     "greeting": "Hi, I'm",
-    "role": "Frontend Developer",
-    "tagline": "I build fast, accessible interfaces with attention to detail. Specialized in React, TypeScript and Next.js.",
+    "role": "Fullstack Developer",
+    "tagline": "I build fast, accessible interfaces always taking care of the product details. Specialized in React, TypeScript and Next.js.",
     "viewProjects": "View projects",
     "downloadResume": "Download CV"
   },
   "about": {
     "title": "About me",
     "paragraphs": [
-      "I'm Sergio Tejon, a frontend developer from Bucaramanga, Colombia. I have a strong orientation towards excellence and collaborative work, and I focus on building robust solutions through meticulous attention to detail and constant process optimization.",
-      "I come from bilingual customer service, where I developed complex problem-solving, effective communication and pressure management skills. Today I apply those skills building interfaces with React, TypeScript and Next.js.",
+      "I'm Sergio Tejon, a fullstack developer from Bucaramanga, Colombia. I enjoy creating innovative and efficient solutions. I have a strong orientation towards excellence and collaborative work, and I focus on building robust web applications through meticulous attention to detail and constant process optimization.",
+      "I come from bilingual customer service, where I developed skills in complex problem-solving, effective communication and pressure management. Today I apply those skills building interfaces with React, TypeScript and Next.js.",
       "When I'm not coding, I'm usually exploring new technologies or improving personal projects like this portfolio."
     ]
   },

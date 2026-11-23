@@ -39,7 +39,7 @@ export function Navbar({
       <nav className="mx-auto flex h-16 max-w-5xl items-center justify-between px-6">
         <Link
           href={`/${lang}`}
-          className="font-mono text-sm font-semibold tracking-tight"
+          className="font-mono text-lg font-semibold tracking-tight"
         >
           {name.slice(0, -3)}
           <span className="bg-gradient-to-r from-accent via-violet-400 to-cyan-400 bg-clip-text text-transparent">
