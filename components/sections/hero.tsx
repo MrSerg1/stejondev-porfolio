@@ -104,8 +104,8 @@ export function Hero({ lang, hero }: { lang: Locale; hero: HeroDict }) {
           <Image
             src={profileImage}
             alt={`${authorName} Tejon`}
-            width={306}
-            height={414}
+            width={558}
+            height={755}
             priority
             sizes="(min-width: 1024px) 320px, 256px"
             className="h-auto w-64 sm:w-72 lg:w-80 dark:hidden"
@@ -113,11 +113,11 @@ export function Hero({ lang, hero }: { lang: Locale; hero: HeroDict }) {
           <Image
             src={profileImageDark}
             alt=""
-            width={306}
-            height={414}
+            width={558}
+            height={755}
             priority
             sizes="(min-width: 1024px) 320px, 256px"
-            className="hidden h-auto w-64 brightness-[0.85] contrast-[0.95] sm:w-72 lg:w-80 dark:block"
+            className="hidden h-auto w-64 brightness-[0.9] sm:w-72 lg:w-80 dark:block"
           />
         </motion.div>
       </motion.div>
