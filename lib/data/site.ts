@@ -1,7 +1,7 @@
 import type { Locale } from "@/app/[lang]/dictionaries";
 import type { Social } from "@/lib/types";
 
-export const siteName = "Sergio";
+export const authorName = "Sergio";
 
 export const email = "sergiotejon96@gmail.com";
 

@@ -42,7 +42,6 @@ export function Navbar({
           className="font-mono text-sm font-semibold tracking-tight"
         >
           {name}
-          <span className="text-accent">.dev</span>
         </Link>
 
         <div className="hidden items-center gap-6 md:flex">

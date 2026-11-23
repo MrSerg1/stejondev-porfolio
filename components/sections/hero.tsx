@@ -3,7 +3,7 @@
 import { ArrowDown, FileDown } from "lucide-react";
 import { motion, type Variants } from "motion/react";
 
-import { getResumeUrl, siteName } from "@/lib/data/site";
+import { authorName, getResumeUrl } from "@/lib/data/site";
 import type { Locale } from "@/app/[lang]/dictionaries";
 
 type HeroDict = {
@@ -57,7 +57,7 @@ export function Hero({ lang, hero }: { lang: Locale; hero: HeroDict }) {
         >
           {hero.greeting}{" "}
           <span className="bg-gradient-to-r from-accent via-violet-400 to-cyan-400 bg-clip-text text-transparent">
-            {siteName}
+            {authorName}
           </span>
         </motion.h1>
 
