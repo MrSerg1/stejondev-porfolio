@@ -41,7 +41,10 @@ export function Navbar({
           href={`/${lang}`}
           className="font-mono text-sm font-semibold tracking-tight"
         >
-          {name}
+          {name.slice(0, -3)}
+          <span className="bg-gradient-to-r from-accent via-violet-400 to-cyan-400 bg-clip-text text-transparent">
+            {name.slice(-3)}
+          </span>
         </Link>
 
         <div className="hidden items-center gap-6 md:flex">
