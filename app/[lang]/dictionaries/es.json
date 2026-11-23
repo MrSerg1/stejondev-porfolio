@@ -1,0 +1,60 @@
+{
+  "site": {
+    "name": "Sergio",
+    "title": "Sergio Tejon — Frontend Developer",
+    "description": "Portfolio de Sergio Tejon, desarrollador frontend especializado en React, TypeScript y Next.js."
+  },
+  "nav": {
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "skills": "Habilidades",
+    "experience": "Experiencia",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "badge": "Disponible para nuevos proyectos",
+    "greeting": "Hola, soy",
+    "role": "Frontend Developer",
+    "tagline": "Construyo interfaces rápidas, accesibles y con cuidado por el detalle. Especializado en React, TypeScript y Next.js.",
+    "viewProjects": "Ver proyectos",
+    "downloadResume": "Descargar CV"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "paragraphs": [
+      "Soy Sergio Tejon, desarrollador frontend desde Bucaramanga, Colombia. Tengo una sólida orientación a la excelencia y el trabajo colaborativo, y me centro en crear soluciones robustas mediante atención meticulosa al detalle y la optimización constante de procesos.",
+      "Vengo del servicio al cliente bilingüe, donde desarrollé resolución de problemas complejos, comunicación efectiva y gestión bajo presión. Hoy aplico esas habilidades construyendo interfaces con React, TypeScript y Next.js.",
+      "Cuando no estoy programando, suelo estar explorando nuevas tecnologías o mejorando proyectos personales como este portfolio."
+    ]
+  },
+  "projects": {
+    "title": "Proyectos",
+    "subtitle": "Una selección de lo que he construido.",
+    "demo": "Demo",
+    "code": "Código"
+  },
+  "skills": {
+    "title": "Habilidades",
+    "subtitle": "Tecnologías y herramientas con las que trabajo."
+  },
+  "experience": {
+    "title": "Experiencia",
+    "subtitle": "Mi trayectoria profesional.",
+    "present": "Actualidad"
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "¿Tienes un proyecto en mente o quieres trabajar conmigo? Escríbeme.",
+    "emailMe": "Escríbeme",
+    "downloadResume": "Descargar CV"
+  },
+  "footer": {
+    "builtWith": "Hecho con Next.js, Tailwind CSS y Framer Motion",
+    "rights": "Todos los derechos reservados."
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "description": "La página que buscas no existe o fue movida.",
+    "back": "Volver al inicio"
+  }
+}
